@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap');
+:root {
+    --color-header: #005E53;
+    --color-fondo: #EBF7FF;
+    --color-mensajesenviados: #D5FFC5;
+    --color-mensajesrecibidos: #E91E63;
+}
+
+body {
+    background-color: white;
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*  ----------------------------------------Ej.8----------------------------------------  */
+
+.fondoHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 5rem;
+    background-color: var(--color-header);
+    color: white;
+}
+
+#elemento {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mensajes {
+    display: grid;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-auto-flow: row;
+    grid-auto-rows: 15%;
+    align-items: center;
+    width: 30rem;
+    height: 40rem;
+    background-color: var(--color-fondo);
+    color: white;
+    display: grid;
+    overflow-y: auto;
+}
+
+.mensajeIndividual {}
+
+.texto {
+    margin-bottom: 10px;
+}
+
+.hora {
+    float: right;
+    padding-right: 5px;
+}
+
+.estado {
+    float: right;
+}
+
+.enviado {
+    background-color: var(--color-mensajesenviados);
+    width: 15rem;
+    height: auto;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.recibido {
+    background-color: var(--color-mensajesrecibidos);
+    width: 15rem;
+    height: auto;
+    padding: 5px;
+    margin-left: 230px;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
